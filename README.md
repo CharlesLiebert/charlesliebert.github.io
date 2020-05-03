@@ -1,1 +1,1 @@
-# charlesliebert.github.io/home
+# charlesliebert.github.io
