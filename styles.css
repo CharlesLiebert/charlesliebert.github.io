@@ -1,0 +1,95 @@
+@fontface
+{
+  font-family: "Book Antiqua";
+  src: url("fonts/BKANT.ttf") format("truetype");
+  src: url("fonts/BKANT.eot") format("truetype");
+
+  font-family: "Charlesliebertblackfont";
+  src: url("fonts/Charlesliebertblackfont-Black.ttf") format("truetype");
+  src: url("fonts/Charlesliebertblackfont-Black.eot"); fortmat("truetype");
+}
+
+body
+{
+  font-family: Book Antiqua;
+}
+
+tittle
+{
+  display: none;
+}
+
+#mainsite img
+{
+  width: 100%;
+  height: 100%;
+}
+
+#events
+{
+  display: none;
+}
+
+#youtube
+{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a
+{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: red;
+}
+
+#footer
+{
+  height: 200px;
+  line-height: 30px;
+}
+
+.container
+{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.column-a
+{
+  display: block;
+  float: left;
+  font-size: 20px;
+}
+
+h4
+{
+  color: white;
+  font-family: Charlesliebertblackfont;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.column-b
+{
+  display: block;
+  float: right;
+}
+
+.column-b img
+{
+  margin-top: 75px;
+  margin-right: 50px;
+}
+
+.column-b p
+{
+  font-family: Book Antiqua;
+  color: white;
+  font-size: 10px;
+}
