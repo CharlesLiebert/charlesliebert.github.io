@@ -11,7 +11,7 @@
 
 body
 {
-  font-family: Book Antiqua;
+  font-family: Bookman;
 }
 
 tittle
@@ -58,8 +58,10 @@ a:hover
 h4
 {
   color: white;
-  font-family: Charlesliebertblackfont;
-  font-size: 50px;
+  font-family: Bookman;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 35px;
   margin-bottom: 0;
 }
 
