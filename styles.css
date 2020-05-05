@@ -1,17 +1,21 @@
 @fontface
 {
-  font-family: "Book Antiqua";
-  src: url("fonts/BKANT.ttf") format("truetype");
-  src: url("fonts/BKANT.eot") format("truetype");
+  font-family: 'eczarregular';
+  src: url('fonts/eczar/eczar-regular-webfont.woff2') format('woff2'),
+       url('fonts/eczar/eczar-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-  font-family: "Charlesliebertblackfont";
-  src: url("fonts/Charlesliebertblackfont-Black.ttf") format("truetype");
-  src: url("fonts/Charlesliebertblackfont-Black.eot"); fortmat("truetype");
+  font-family: 'charlesliebertblackfontRg';
+  src: url('fonts/charlesliebertblackfont/charlesliebertblackfont-black-webfont.woff2') format('woff2'),
+       url('fonts/charlesliebertblackfont/charlesliebertblackfont-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body
 {
-  font-family: 'Book Antiqua';
+  font-family: 'eczarregular';
 }
 
 tittle
@@ -70,7 +74,7 @@ a:hover
 h4
 {
   color: white;
-  font-family: 'Charlesliebertblackfont';
+  font-family: 'charlesliebertblackfontRg';
   font-variant: small-caps;
   font-size: 50px;
   margin-bottom: 0;
@@ -90,7 +94,7 @@ h4
 
 .column-b p
 {
-  font-family: 'Book Antiqua';
+  font-family: 'eczarregular';
   color: white;
   font-size: 10px;
 }
