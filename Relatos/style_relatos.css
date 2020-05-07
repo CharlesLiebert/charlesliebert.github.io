@@ -49,6 +49,13 @@ a:hover
   font-size: 20px;
 }
 
+.column-a img
+{
+  display: block;
+  float: left;
+  margin-bottom: 0;
+}
+
 .column-b
 {
   display: block;
