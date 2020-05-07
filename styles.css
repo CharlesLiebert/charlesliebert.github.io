@@ -3,6 +3,7 @@
 body
 {
   font-family: Goudy Bookletter 1911, serif;
+  background-image: url(Resources/background_.jpg);
 }
 
 tittle
@@ -16,9 +17,12 @@ tittle
   height: 100%;
 }
 
-#events
+#about
 {
-  display: none;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 100px 50px 100px;
 }
 
 #youtube
@@ -26,6 +30,13 @@ tittle
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#newsletter
+{
+  margin: 50px 0 50px 0;
+  color: white;
+  text-align: center;
 }
 
 a
@@ -43,6 +54,7 @@ a:hover
 {
   height: 200px;
   line-height: 30px;
+  background-image: url(Resources/Footer.jpg);
 }
 
 .container
@@ -53,17 +65,10 @@ a:hover
 
 .column-a
 {
+  margin-top: 60px;
   display: block;
   float: left;
   font-size: 20px;
-}
-
-h4
-{
-  color: white;
-  font-variant: small-caps;
-  font-size: 50px;
-  margin-bottom: 0;
 }
 
 .column-b
@@ -74,7 +79,7 @@ h4
 
 .column-b img
 {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-right: 50px;
 }
 
