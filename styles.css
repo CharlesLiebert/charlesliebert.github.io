@@ -1,21 +1,8 @@
-@fontface
-{
-  font-family: 'eczarregular';
-  src: url('fonts/eczar/eczar-regular-webfont.woff2') format('woff2'),
-       url('fonts/eczar/eczar-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: 'charlesliebertblackfontRg';
-  src: url('fonts/charlesliebertblackfont/charlesliebertblackfont-black-webfont.woff2') format('woff2'),
-       url('fonts/charlesliebertblackfont/charlesliebertblackfont-black-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 
 body
 {
-  font-family: 'eczarregular';
+  font-family: Goudy Bookletter 1911, serif;
 }
 
 tittle
@@ -74,7 +61,6 @@ a:hover
 h4
 {
   color: white;
-  font-family: 'charlesliebertblackfontRg';
   font-variant: small-caps;
   font-size: 50px;
   margin-bottom: 0;
@@ -94,7 +80,6 @@ h4
 
 .column-b p
 {
-  font-family: 'eczarregular';
   color: white;
   font-size: 10px;
 }
