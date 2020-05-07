@@ -1,17 +1,9 @@
-@fontface
-{
-  font-family: "Book Antiqua";
-  src: url("fonts/BKANT.ttf") format("truetype");
-  src: url("fonts/BKANT.eot") format("truetype");
-
-  font-family: "Charlesliebertblackfont";
-  src: url("fonts/Charlesliebertblackfont-Black.ttf") format("truetype");
-  src: url("fonts/Charlesliebertblackfont-Black.eot"); fortmat("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 
 body
 {
-  font-family: Bookman;
+  font-family: Goudy Bookletter 1911, serif;
+  background-image: url(background_.jpg);
 }
 
 tittle
@@ -40,6 +32,7 @@ a:hover
 {
   height: 200px;
   line-height: 30px;
+  background-image: url(Footer.jpg);
 }
 
 .container
@@ -50,19 +43,10 @@ a:hover
 
 .column-a
 {
+  margin-top: 60px;
   display: block;
   float: left;
   font-size: 20px;
-}
-
-h4
-{
-  color: white;
-  font-family: Bookman;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: 35px;
-  margin-bottom: 0;
 }
 
 .column-b
@@ -73,12 +57,12 @@ h4
 
 .column-b img
 {
-  margin: 75px 50px 0 0;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 .column-b p
 {
-  font-family: Book Antiqua;
   color: white;
   font-size: 10px;
 }
