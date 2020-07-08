@@ -20,12 +20,13 @@ body
   text-align: justify;
 }
 
-#more
+#share
 {
   color: white;
   margin-top: 75px;
   text-align: center;
   font-variant: small-caps;
+  font-weight: bold;
   font-size: 20px;
 }
 
@@ -49,6 +50,12 @@ a
 a:hover
 {
   color: red;
+}
+
+#share img
+{
+  height: 15%;
+  width: 15%;
 }
 
 #footer
