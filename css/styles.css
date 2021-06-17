@@ -1,0 +1,91 @@
+:root
+{
+	--fuentePrincipal: 'Sedgwick Ave', cursive;
+
+	--red: #df0000;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+html
+{
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1 Rem = 10px*/
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+
+/* Globales */
+body
+{
+	background-color: var(--black);
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: var(--white);
+	font-family: var(--fuentePrincipal);
+}
+
+h1
+{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;	
+}
+
+
+/* Contenido Principal */
+
+.contenedor
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.logo
+{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+
+.text
+{
+	width: 55%;
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 768px)
+{
+	.contenedor
+	{
+		grid-template-rows: none;
+	}
+
+	.logo
+	{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+	}
+
+	.text
+	{
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+	}
+}
