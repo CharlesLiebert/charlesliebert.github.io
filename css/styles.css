@@ -51,6 +51,14 @@ img
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
+
+}
+
+.nothing
+{
+	grid-row: 1 / 2;
+	color: var(--black);
+	margin-bottom: 80rem;
 }
 
 .logo
@@ -77,15 +85,8 @@ img
 		grid-template-rows: none;
 	}
 
-	.logo
+	.nothing
 	{
-		grid-column: 1 / 4;
-		grid-row: 1 / 2;
-	}
-
-	.text
-	{
-		grid-column: 1 / 4;
-		grid-row: 1 / 2;
+		margin-bottom: 1px;
 	}
 }
