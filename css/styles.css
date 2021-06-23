@@ -40,7 +40,7 @@ img
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;	
+	width: 100%;	
 }
 
 
@@ -52,13 +52,6 @@ img
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 
-}
-
-.nothing
-{
-	grid-row: 1 / 2;
-	color: var(--black);
-	margin-bottom: 80rem;
 }
 
 .logo
@@ -78,15 +71,15 @@ img
 	margin-right: auto;
 }
 
-@media (min-width: 768px)
+@media (min-width: 1025px)
 {
+	img
+	{
+		width: 70%;
+	}
+
 	.contenedor
 	{
 		grid-template-rows: none;
-	}
-
-	.nothing
-	{
-		margin-bottom: 1px;
 	}
 }
