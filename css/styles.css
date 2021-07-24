@@ -1,0 +1,248 @@
+:root
+{
+	--fuentePrincipal: 'Sedgwick Ave', cursive;
+
+	--red: #df0000;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+html
+{
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1 Rem = 10px*/
+}
+
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+
+/* Globales */
+body
+{
+	background-color: var(--black);
+
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: var(--white);
+	font-family: var(--fuentePrincipal);
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;	
+}
+
+div 
+{
+  overflow: hidden;
+  line-height: 1.7;
+}
+
+/* Contenido Principal */
+
+
+/* Header */
+
+header
+{
+	background-color: var(--black);
+}
+
+.header__about
+{
+	margin-top: -60%;
+}
+
+.header__about-description
+{
+	padding: 1.5rem;
+	text-align: justify;
+
+	margin-top: -33%;
+}
+
+@media (min-width: 1025px)
+{
+	.header
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.header__profile
+	{
+		grid-column: 1 / 2;
+	}
+
+	.header__about
+	{
+		grid-column: 2 / 3;
+
+		font-size: 2.1rem;
+		padding-top: 80%;
+		margin-left: -20%;
+	}
+
+}
+
+
+/* Video */
+
+@media (min-width: 1025px)
+{
+	.video
+	{
+		margin-top: -15%;
+	}
+}
+
+.video
+{
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overFlow: hidden;
+}
+
+.video iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Music */
+
+.music
+{
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+
+	background-image: url(../img/background/backgroundSite.webp);
+	background-size: contain;
+
+	text-align: center;
+	font-size: 2.2rem;
+}
+
+.musicBackground h1
+{
+	padding-bottom: 0;
+}
+
+.scroll
+{
+	padding: 0;
+	margin: 0;
+}
+
+.streaming
+{
+	padding: 0 1.5rem 1.5rem 1.5rem;
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.streaming__logos
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+@media (min-width: 1025px)
+{
+	/*
+	.music__bandcamp
+	{
+		padding: 1.5rem 0 1.5rem 0;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		justify-items: center;
+	}
+
+	.music__bandcamp-album:nth-child(4)
+	{
+		margin-right: -100%;
+	}
+
+	.music__bandcamp-album:nth-child(5)
+	{
+		margin-right: -100%;
+	}
+	*/
+
+	.streaming__logos
+	{
+		padding: 0 1.5rem 0 1.5rem;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		justify-items: center;
+
+		max-width: 100%;
+	}
+}
+
+/* Footer */
+
+.footer
+{
+	padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.footer__text
+{
+	text-align: center;
+}
+
+
+/* Music Slider */
+
+
+.slider-container 
+{
+  height: 75vh;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide 
+{
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4rem 1rem 1rem; 
+  user-select: none;
+}
+
+.slide iframe 
+{
+  transition: transform 0.3s ease-in-out;
+}
+
+.grabbing 
+{
+  cursor: grabbing;
+}
+
+.grabbing .slide iframe 
+{
+  transform: scale(0.9);
+}
