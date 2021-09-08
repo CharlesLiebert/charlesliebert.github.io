@@ -58,6 +58,7 @@ div
 header
 {
 	background-color: var(--black);
+	text-align: justify;
 }
 
 .header__about
@@ -68,8 +69,6 @@ header
 .header__about-description
 {
 	padding: 1.5rem;
-	text-align: justify;
-
 	margin-top: -33%;
 }
 
@@ -83,21 +82,28 @@ header
 	.header
 	{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(4, 1fr);
 	}
 
 	.header__profile
 	{
-		grid-column: 1 / 2;
+		grid-column: 1 / 5;
+		grid-row: 1 / 5;
 	}
 
 	.header__about
 	{
-		grid-column: 2 / 3;
+		grid-column: 4 / 9;
+		grid-row: 2 / 5;
 
 		font-size: 2.1rem;
-		padding-top: 80%;
-		margin-left: -20%;
+		margin-top: -15%;
+	}
+
+	.header__about-description
+	{
+		margin-top: -30%;
 	}
 
 }
@@ -138,7 +144,7 @@ header
 	background-image: url(../img/background/backgroundSite.webp);
 	background-size: contain;
 
-	padding: 1.5rem 1.5rem 1rem 1.5rem;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 	text-align: center;
 	font-size: 2.2rem;
 }
@@ -257,36 +263,18 @@ header
 	margin-top: -3rem;
 }
 
-.elfsight-app-1701355e-b1d5-47e0-9cf9-4e82d14a974f
+.socialMedia__icons
 {
-	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	padding-bottom: 5rem;
 }
 
-.hider 
+.socialMedia__icons .fab
 {
-	margin-top: -13rem;
-	text-align: right;
-	padding: 0 0 0 5rem;
-}
-
-@media (min-width: 725px)
-{
-	.hider 
-	{
-		margin-top: -17.5rem;
-		text-align: right;
-		padding: 0 0 0 5rem;	
-	}
-}
-
-@media (min-width: 1025px)
-{
-	.hider 
-	{
-		margin-top: -22rem;
-		text-align: right;
-		padding: 0 0 0 5rem;	
-	}
+	font-size: 100px;
+	color: var(--red);
 }
 
 
